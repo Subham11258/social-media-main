@@ -10,7 +10,7 @@ const bodyparser  = require("body-parser")
 const app = express();
 const PORT = process.env.PORT || 8080;
 app.use(cors({
-  origin: ['http://localhost:3000']
+  origin: ['https://social-media-main-kappa.vercel.app/']
 }));
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
