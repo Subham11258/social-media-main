@@ -31,7 +31,7 @@ function LogIn() {
 
     console.log("FormData", formData)
     try {
-      const response = await fetch('http://localhost:8080/api/users/login', {
+      const response = await fetch('https://social-media-main.onrender.com/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -126,7 +126,7 @@ function Authenticate() {
 
     console.log("FormData", formData)
     try {
-      const response = await fetch('http://localhost:8080/api/users/signup', {
+      const response = await fetch('https://social-media-main.onrender.com/api/users/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

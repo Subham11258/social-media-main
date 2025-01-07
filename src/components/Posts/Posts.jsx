@@ -12,7 +12,7 @@ const Posts = ( ) => {
   const [posts, setPosts] = useState([])
 
   const fetchPosts = async () => {
-    const response = await fetch("http://localhost:8080/api/posts/fetchAllPosts");
+    const response = await fetch("https://social-media-main.onrender.com/api/posts/fetchAllPosts");
     const converted = await response.json()
     setPosts(converted)
   }

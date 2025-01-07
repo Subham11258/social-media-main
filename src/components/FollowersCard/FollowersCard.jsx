@@ -5,7 +5,7 @@ const FollowersCard = () => {
     const [users, setUsers] = useState([]);
     const [unfollow, setUnfollow] = useState([])
     const fetchUsers = async () => {
-        const response = await fetch("http://localhost:8080/api/users/fetchUsers");
+        const response = await fetch("https://social-media-main.onrender.com/api/users/fetchUsers");
         const converted = await response.json()
         console.log("all users", converted)
         setUsers(converted)
@@ -21,7 +21,7 @@ const FollowersCard = () => {
             followerId: follwoerId._id
 
         }
-        const response = await fetch('http://localhost:8080/api/profile/follow', {
+        const response = await fetch('https://social-media-main.onrender.com/api/profile/follow', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

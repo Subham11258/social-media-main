@@ -9,7 +9,7 @@ const [profileData,setProfileData] = useState('')
     const formData = {
       userId : localStorage.getItem("userId")
     }
-    const response = await fetch('http://localhost:8080/api/profile/data', {
+    const response = await fetch('https://social-media-main.onrender.com/api/profile/data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

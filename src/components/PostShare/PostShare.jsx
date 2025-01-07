@@ -43,7 +43,7 @@ const PostShare = () => {
         formData.append("likes", 0);
         formData.append("liked", false);
 
-        const response = await fetch("http://localhost:8080/api/posts/upload", {
+        const response = await fetch("https://social-media-main.onrender.com/api/posts/upload", {
           method: "POST",
           body: formData,
         });
@@ -69,7 +69,7 @@ const PostShare = () => {
         formData.append("likes", 0);
         formData.append("liked", false);
 
-        const response = await fetch("http://localhost:8080/api/posts/upload/video", {
+        const response = await fetch("https://social-media-main.onrender.com/api/posts/upload/video", {
           method: "POST",
           body: formData,
         });

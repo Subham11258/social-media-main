@@ -15,7 +15,7 @@ const Post = ({ data, attribute }) => {
       _id: attribute._id,
       userId: localStorage.getItem("userId")
     }
-    const response = await fetch('http://localhost:8080/api/profile/like', {
+    const response = await fetch('https://social-media-main.onrender.com/api/profile/like', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
